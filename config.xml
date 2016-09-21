@@ -61,7 +61,8 @@
     -->
 
     <!-- Core plugins -->
-    <gap:plugin name="com.phonegap.plugin.sqlitePlugin.SQLitePlugin" source="npm" />
+    <plugin name="io.litehelpers.cordova.sqlite" spec="0.7.6" source="pgb" />
+    
     <gap:plugin name="org.apache.cordova.camera" source="npm" />
     <gap:plugin name="org.apache.cordova.media-capture" source="npm" />
     <gap:plugin name="org.apache.cordova.console" source="npm" />
