@@ -16,7 +16,7 @@ document.addEventListener("deviceready", function()
 
     //alert('in device ready');
 
-    db = window.sqlitePlugin.openDatabase({name: "note.db"});
+    db = window.sqlitePlugin.openDatabase({name: "note.db", location: 'default'});
     db.transaction(function(tx) {
         tx.executeSql("CREATE TABLE IF NOT EXISTS note (name text primary key, data text)");
     }, function(err){
