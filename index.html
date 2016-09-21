@@ -24,18 +24,18 @@ document.addEventListener("deviceready", function()
     });
 
 
- window.sqlitePlugin.echoTest(function() {
-    navigator.notification.alert('Echo test OK');
-  }, function(error) {
-    navigator.notification.alert('Echo test ERROR: ' + error.message);
-  });
+     window.sqlitePlugin.echoTest(function() {
+        navigator.notification.alert('Echo test OK');
+      }, function(error) {
+        navigator.notification.alert('Echo test ERROR: ' + error.message);
+      });
 
- window.sqlitePlugin.selfTest(function() {
-    navigator.notification.alert('Self test OK');
-  }, function(error) {
-    navigator.notification.alert('Self test ERROR: ' + error.message);
-  });
- 
+     window.sqlitePlugin.selfTest(function() {
+        navigator.notification.alert('Self test OK');
+      }, function(error) {
+        navigator.notification.alert('Self test ERROR: ' + error.message);
+      });
+     
 }, false);
 
 
