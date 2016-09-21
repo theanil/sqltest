@@ -14,7 +14,7 @@ var db = null;
 document.addEventListener("deviceready", function()
 {
 
-    //alert('in device ready');
+    alert('in device ready');
 
     db = window.sqlitePlugin.openDatabase({name: "note.db", location: 'default'});
     db.transaction(function(tx) {
@@ -24,15 +24,15 @@ document.addEventListener("deviceready", function()
     });
 
 
-window.sqlitePlugin.echoTest(function() {
-    console.log('ECHO test OK');
-    alert('ECHO test OK');
-  });
+    window.sqlitePlugin.echoTest(function() {
+        console.log('ECHO test OK');
+        alert('ECHO test OK');
+      });
 
-window.sqlitePlugin.selfTest(function() {
-    console.log('SELF test OK');
-    alert('SELF test OK');
-  });
+    window.sqlitePlugin.selfTest(function() {
+        console.log('SELF test OK');
+        alert('SELF test OK');
+      });
 
 
 
