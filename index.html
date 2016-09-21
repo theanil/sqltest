@@ -15,7 +15,7 @@ document.addEventListener("deviceready", function()
 {
 
     alert('in device ready');
-    
+
     db = window.sqlitePlugin.openDatabase({name: "note.db"});
     db.transaction(function(tx) {
         tx.executeSql("CREATE TABLE IF NOT EXISTS note (name text primary key, data text)");
@@ -34,6 +34,7 @@ document.addEventListener("deviceready", function()
         <script type="text/javascript" src="cordova.js"></script>
         <script src="jquery-2.1.4.min.js"></script>
         <script src="jquery.mobile-1.4.5.min.js"></script>
+        <script src="SQLitePlugin.js"></script>
         <script type="text/javascript">
             //put JS code here
         </script>
