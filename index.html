@@ -39,6 +39,21 @@ document.addEventListener("deviceready", function()
 
 }, false);
 
+
+document.addEventListener('deviceready', function() {
+  window.sqlitePlugin.echoTest(function() {
+    console.log('ECHO test OK');
+    alert('ECHO test OK');
+  });
+});
+
+document.addEventListener('deviceready', function() {
+  window.sqlitePlugin.selfTest(function() {
+    console.log('SELF test OK');
+    alert('SELF test OK');
+  });
+});
+
         </script>
 
     </head>
