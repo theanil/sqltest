@@ -20,8 +20,23 @@ document.addEventListener("deviceready", function()
     db.transaction(function(tx) {
         tx.executeSql("CREATE TABLE IF NOT EXISTS note (name text primary key, data text)");
     }, function(err){
-        alert("An error occurred while initializing the app");
+        alert("An error occurred while initializing the app: " + err);
     });
+
+
+window.sqlitePlugin.echoTest(function() {
+    console.log('ECHO test OK');
+    alert('ECHO test OK');
+  });
+
+window.sqlitePlugin.selfTest(function() {
+    console.log('SELF test OK');
+    alert('SELF test OK');
+  });
+
+
+
+
 }, false);
 
         </script>
