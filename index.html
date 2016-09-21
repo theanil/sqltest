@@ -14,7 +14,7 @@ var db = null;
 document.addEventListener("deviceready", function()
 {
 
-    alert('in device ready');
+    //alert('in device ready');
 
     db = window.sqlitePlugin.openDatabase({name: "note.db"});
     db.transaction(function(tx) {
@@ -100,7 +100,9 @@ document.addEventListener("deviceready", function()
 
 $(document).on("pagebeforeshow", "#display", function(){
     db.transaction(function(tx) {
-        tx.executeSql("SELECT (name) FROM note", [], function(tx,res){
+        document.getElementById("data-list").innerHTML = '';
+        tx.executeSql("SELECT (name) FROM note", [], function(tx,res)
+        {
             for(var iii = 0; iii < res.rows.length; iii++)
             {
                 document.getElementById("data-list").innerHTML = document.getElementById("data-list").innerHTML + "<li><a href='javascript:displayNote(\"" + res.rows.item(iii).name + "\")'>" + res.rows.item(iii).name + "</a></li>";
