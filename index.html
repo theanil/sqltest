@@ -14,7 +14,7 @@ var db = null;
 document.addEventListener("deviceready", function()
 {
 
-    alert('in device ready');
+    //alert('in device ready');
 
     db = window.sqlitePlugin.openDatabase({name: "note.db", location: 'default'});
     db.transaction(function(tx) {
