@@ -184,6 +184,16 @@
     <preference name="SplashMaintainAspectRatio" value="false" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
     
+   <!-- <preference name="phonegap-version" value="3.7.0" /> -->
     <preference name="phonegap-version" value="cli-6.1.0" />
+
+    <!-- Windows 10 (default): -->
+    <preference name="windows-appx-target" value="uap" />
+    <!-- Windows 8.1: -->
+    <preference name="windows-appx-target" value="8.1-win" />
+    <!-- Windows Phone 8.1: -->
+    <preference name="windows-appx-target" value="8.1-phone" />
+
+    <preference name="windows-arch" value="anycpu" />
 
 </widget>
