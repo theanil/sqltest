@@ -185,7 +185,12 @@
     <preference name="SplashShowOnlyFirstTime" value="false" />
     
    <!-- <preference name="phonegap-version" value="3.7.0" /> -->
-    <preference name="phonegap-version" value="cli-6.1.0" />
+    <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
 
 
+
+</widget>
+
+<!-- iOS -->
+<widget CFBundleVersion="3.7.0">
 </widget>
