@@ -183,6 +183,7 @@
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="SplashMaintainAspectRatio" value="false" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
-
+    
+    <preference name="phonegap-version" value="3.7.0" />
 
 </widget>
