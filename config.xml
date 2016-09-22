@@ -62,7 +62,7 @@
 
     <!-- Core plugins -->
    <!-- <plugin name="io.litehelpers.cordova.sqlite" source="pgb" />-->
-    <gap:plugin name="io.litehelpers.cordova.sqlite" version="0.7.6" source="plugins.cordova.io" />
+    <gap:plugin name="io.litehelpers.cordova.sqlite" version="0.7.6" />
 
     
     <gap:plugin name="org.apache.cordova.camera" source="npm" />
