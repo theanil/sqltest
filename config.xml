@@ -187,9 +187,5 @@
    <!-- <preference name="phonegap-version" value="3.7.0" /> -->
     <preference name="phonegap-version" value="cli-6.1.0" />
 
-    <!-- Windows 10 (default): -->
-    <preference name="windows-appx-target" value="uap" />
-    <!-- Windows 8.1: -->
-    <preference name="windows-arch" value="anycpu" />
 
 </widget>
