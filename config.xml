@@ -188,7 +188,7 @@
     <!--<preference name="phonegap-version" value="cli-6.1.0" />-->
 
     <platform name="ios">
-        <preference name="phonegap-version" value="3.7.0" />
+        <preference name="phonegap-version" value="3.9.2" />
     </platform>
 
 </widget>
