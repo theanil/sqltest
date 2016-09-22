@@ -7,7 +7,7 @@
         id        = "in.test.sql"
         version   = "1.0.0">
 
-    <name>SQL Test App</name>
+    <name>SQLTestApp</name>
 
     <description>
         SQL Test
